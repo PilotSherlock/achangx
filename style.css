@@ -1,0 +1,238 @@
+body {
+    background-color: #ffe6f2;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    color: #ff66b2;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: bounce 2s infinite;
+}
+
+.princess-box {
+    margin: 30px 0;
+    position: relative;
+}
+
+.princess-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #ff99cc;
+    box-shadow: 0 0 15px rgba(255, 102, 178, 0.5);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.princess-img:hover {
+    transform: scale(1.1);
+}
+
+.achievement {
+    font-size: 24px;
+    color: #ff66b2;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.message-box {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.congrats-message {
+    color: #ff66b2;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.cute-button {
+    background-color: #ff99cc;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cute-button:hover {
+    transform: scale(1.1);
+    background-color: #ff66b2;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.heart-count {
+    font-size: 24px;
+    color: #ff3366;
+    margin: 10px 0;
+    animation: heartbeat 1s infinite;
+}
+
+.love-message {
+    color: #ff66b2;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.love-days {
+    background: linear-gradient(45deg, #ff66b2, #ff99cc);
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2em;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(255, 102, 178, 0.3);
+}
+
+.day-count {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.memory-wall {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(255, 102, 178, 0.2);
+}
+
+.memory-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.memory-item {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ff66b2;
+    border: 2px solid #ff99cc;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.memory-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 102, 178, 0.3);
+}
+
+.love-letter {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.letter-text {
+    color: #ff66b2;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.birthday-countdown {
+    background: linear-gradient(45deg, #ff66b2, #ff99cc);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    color: white;
+}
+
+.countdown {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.game-section {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(255, 102, 178, 0.3);
+}
+
+.game-canvas {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: #ffe6f2;
+    border: 3px solid #ff99cc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.player {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cake {
+    position: absolute;
+    font-size: 1.5em;
+    animation: fall linear;
+}
+
+.wish-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.wishes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.wish {
+    background: #ffe6f2;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #ff66b2;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes fall {
+    from { top: -20px; }
+    to { top: 100%; }
+}
